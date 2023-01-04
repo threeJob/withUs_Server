@@ -19,13 +19,17 @@ repositories {
 }
 
 dependencies {
+    implementation 'com.google.code.gson:gson:2.8.7'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.projectlombok:lombok'
     runtimeOnly 'com.h2database:h2'
-    runtimeOnly 'com.mysql:mysql-connector-j'
+    implementation 'org.projectlombok:lombok'
+    runtimeOnly 'com.mysql:mysql-connector-java'
     annotationProcessor 'org.projectlombok:lombok'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation "org.springframework.cloud:spring-cloud-starter-openfeign:3.1.0"
 }
 
 tasks.named('test') {

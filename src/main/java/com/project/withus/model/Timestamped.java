@@ -14,6 +14,6 @@ import java.time.LocalDateTime;
 public abstract class Timestamped {
 
     @CreatedDate // 최초 생성 시점
-    private LocalDateTime createdAt;
+    private LocalDateTime created_At;
 
 }

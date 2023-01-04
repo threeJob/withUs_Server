@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class RoomController {
     private final RoomService roomService;
 
+
     @PostMapping("/api/room")
     public ResponseEntity<?> createRoom(@RequestBody CreateRoomDto createRoomDto)
     {
